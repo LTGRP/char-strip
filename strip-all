@@ -1,0 +1,223 @@
+#!/bin/bash
+
+# Remove spaces
+
+for f in *
+do
+  new="${f// /_}"
+  if [ "$new" != "$f" ]
+  then
+    if [ -e "$new" ]
+    then
+      echo not renaming \""$f"\" because \""$new"\" already exists
+    else
+      echo moving "$f" to "$new"
+      mv "$f" "$new"
+    fi
+  fi
+done
+
+# Remove ( 
+
+for f in *
+do
+  new="${f//\(/}"
+  if [ "$new" != "$f" ]
+  then
+    if [ -e "$new" ]
+    then
+      echo not renaming \""$f"\" because \""$new"\" already exists
+    else
+      echo moving "$f" to "$new"
+      mv "$f" "$new"
+    fi
+  fi
+done
+
+
+# Remove )
+
+for f in *
+do
+  new="${f//\)/}"
+  if [ "$new" != "$f" ]
+  then
+    if [ -e "$new" ]
+    then
+      echo not renaming \""$f"\" because \""$new"\" already exists
+    else
+      echo moving "$f" to "$new"
+      mv "$f" "$new"
+    fi
+  fi
+done
+
+# Remove '
+
+for f in *
+do
+  new="${f//\'/}"
+  if [ "$new" != "$f" ]
+  then
+    if [ -e "$new" ]
+    then
+      echo not renaming \""$f"\" because \""$new"\" already exists
+    else
+      echo moving "$f" to "$new"
+      mv "$f" "$new"
+    fi
+  fi
+done
+
+# Remove "
+
+for f in *
+do
+  new="${f//\"/}"
+  if [ "$new" != "$f" ]
+  then
+    if [ -e "$new" ]
+    then
+      echo not renaming \""$f"\" because \""$new"\" already exists
+    else
+      echo moving "$f" to "$new"
+      mv "$f" "$new"
+    fi
+  fi
+done
+
+# Remove '
+
+for f in *
+do
+  new="${f//\'/}"
+  if [ "$new" != "$f" ]
+  then
+    if [ -e "$new" ]
+    then
+      echo not renaming \""$f"\" because \""$new"\" already exists
+    else
+      echo moving "$f" to "$new"
+      mv "$f" "$new"
+    fi
+  fi
+done
+
+# Remove {
+
+for f in *
+do
+  new="${f//\{/}"
+  if [ "$new" != "$f" ]
+  then
+    if [ -e "$new" ]
+    then
+      echo not renaming \""$f"\" because \""$new"\" already exists
+    else
+      echo moving "$f" to "$new"
+      mv "$f" "$new"
+    fi
+  fi
+done
+
+# Remove }
+
+for f in *
+do
+  new="${f//\}/}"
+  if [ "$new" != "$f" ]
+  then
+    if [ -e "$new" ]
+    then
+      echo not renaming \""$f"\" because \""$new"\" already exists
+    else
+      echo moving "$f" to "$new"
+      mv "$f" "$new"
+    fi
+  fi
+done
+
+# Replace " " with _ 
+
+for f in *
+do
+  new="${f// /_}"
+  if [ "$new" != "$f" ]
+  then
+    if [ -e "$new" ]
+    then
+      echo not renaming \""$f"\" because \""$new"\" already exists
+    else
+      echo moving "$f" to "$new"
+      mv "$f" "$new"
+    fi
+  fi
+done
+
+for f in *
+do
+  new="${f// /_}"
+  if [ "$new" != "$f" ]
+  then
+    if [ -e "$new" ]
+    then
+      echo not renaming \""$f"\" because \""$new"\" already exists
+    else
+      echo moving "$f" to "$new"
+      mv "$f" "$new"
+    fi
+  fi
+done
+
+# Remove [
+
+for f in *
+do
+  new="${f//\[/}"
+  if [ "$new" != "$f" ]
+  then
+    if [ -e "$new" ]
+    then
+      echo not renaming \""$f"\" because \""$new"\" already exists
+    else
+      echo moving "$f" to "$new"
+      mv "$f" "$new"
+    fi
+  fi
+done
+
+# Remove ]
+
+for f in *
+do
+  new="${f//\]/}"
+  if [ "$new" != "$f" ]
+  then
+    if [ -e "$new" ]
+    then
+      echo not renaming \""$f"\" because \""$new"\" already exists
+    else
+      echo moving "$f" to "$new"
+      mv "$f" "$new"
+    fi
+  fi
+done
+
+# Remove emoji
+
+for f in *
+do
+  new="${f//\🚨/}"
+  if [ "$new" != "$f" ]
+  then
+    if [ -e "$new" ]
+    then
+      echo not renaming \""$f"\" because \""$new"\" already exists
+    else
+      echo moving "$f" to "$new"
+      mv "$f" "$new"
+    fi
+  fi
+done
+
+
